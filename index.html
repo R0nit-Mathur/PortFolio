@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronit's Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navbar = document.querySelector('.navbar');
+    
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">RONIT MATHUR</div>
+    
+        <!-- Hamburger Menu Checkbox and Label -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    
+        <!-- Navbar Links -->
+        <ul class="nav-links">
+            <li><a href="#courses">About</a></li>
+            <li><a href="#contact">Collaboration</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+        <p>Email me at <a href="mailto:ronit.oct11@gmail.com">ronit.oct11@gmail.com</a> to collaborate on projects or hackathons.</p>
+    </div>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>RONIT, a Machine Learning enthusiast with expertise in Web Development and Blockchain.</h1>
+            <p>I am passionate about building the future of technology.</p>
+            
+            <!-- Social Media Buttons -->
+            <div class="social-buttons">
+                <a href="https://github.com/R0nit-Mathur" class="social-btn github" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/ronit-mathur-b44241293/" class="social-btn linkedin" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/_.mathur/profilecard/?igsh=bG1lNzEwMjM5Z2g2" class="social-btn twitter" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./img/pfp.png" alt="Ronit">
+        </div>
+    </section>
+
+
+    <!-- Core Expertise Section -->
+    <section class="expertise">
+        <div class="card">
+            <h2>Core Expertise</h2>
+            <p>Machine Learning, Deep Learning, Web Development, Blockchain</p>
+        </div>
+        <div class="card">
+            <h2>Technologies & Frameworks</h2>
+            <p>Python, C++, JavaScript, TensorFlow, PyTorch, React, Node.js, Solidity, Hyperledger</p>
+        </div>
+        <div class="card">
+            <h2>Development & Design</h2>
+            <p>UI/UX Design Principles, Front-end Development, Responsive Design, Figma, Adobe XD</p>
+        </div>
+        <div class="card">
+            <h2>Data Structures & Algorithms</h2>
+            <p>Time & Space Complexity Analysis, Problem-Solving Skills (LeetCode, Codeforces), Competitive Programming</p>
+        </div>
+    </section>
+
+    <!-- Projects Section with Six Cards -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" style="background-image: url('./img/ml.jpeg');">
+                <a href="link-to-project1.html" class="project-link">
+                    <div class="project-info">
+                        <h3>ML Research Paper</h3>
+                        <p>Wrote a ML research paper on LightGBM Predictions.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card" style="background-image: url('./img/bms.jpg');">
+                <a href="link-to-project2.html" class="project-link">
+                    <div class="project-info">
+                        <h3>BookMyShow Clone</h3>
+                        <p>Developed a clone of the famous ticket booking platform.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card" style="background-image: url('./img/zomato.png');">
+                <a href="link-to-project3.html" class="project-link">
+                    <div class="project-info">
+                        <h3>Zomato Clone</h3>
+                        <p>Created a restaurant search and food ordering website.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card" style="background-image: url('./img/solar.jpeg');">
+                <a href="link-to-project4.html" class="project-link">
+                    <div class="project-info">
+                        <h3>3D Solar System Web Page</h3>
+                        <p>A WebGL-based interactive 3D solar system model.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card" style="background-image: url('./img/ecom.jpg');">
+                <a href="link-to-project5.html" class="project-link">
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-stack platform with integrated payment gateways.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card" style="background-image: url('./img/ai.jpeg');">
+                <a href="link-to-project6.html" class="project-link">
+                    <div class="project-info">
+                        <h3>AI Chatbot</h3>
+                        <p>Developed an AI chatbot using NLP for customer support.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section with Detailed Descriptions -->
+    <section id="courses" class="courses">
+        <h2>Courses I've Completed</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <h3>DSA in C++</h3>
+                <p>An in-depth course covering advanced DSA techniques. By - Rohit Negi.</p>
+            </div>
+            <div class="course-card">
+                <h3>Nexus</h3>
+                <p>A complete web development with blockchain course by Rohit Negi.</p>
+            </div>
+            <div class="course-card">
+                <h3>Getting Started with ML</h3>
+                <p>A government-certified course on machine learning foundations. By - Prof. Balaram Ravindran IITM, (NPTEL)</p>
+            </div>
+            <div class="course-card">
+                <h3>100 Days of Machine Learning</h3>
+                <p>Comprehensive AI/ML course covering various machine learning models. By - CampusX</p>
+            </div>
+            <div class="course-card">
+                <h3>Mongo DB - GeeksforGeeks</h3>
+                <p>Mastered NoSQL database concepts and MongoDB operations.</p>
+            </div>
+            <div class="course-card">
+                <h3>B.tech - Computer Science</h3>
+                <p>Completed my Bachelor's of technology in computer science and engineering from GGSIPU Dwarka, New-Delhi (main campus).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboards Section -->
+    <section class="dashboards">
+        <h2>My Coding Profiles</h2>
+        <div class="dashboard-links">
+            <a href="https://leetcode.com/u/DedSec_Ghost/" target="_blank" class="dashboard-card leetcode">
+                <img src="./img/leetcode.png" alt="LeetCode" class="dashboard-image">
+                <h3>LeetCode</h3>
+                <p>Explore my coding journey on LeetCode.</p>
+            </a>
+            <a href="https://www.geeksforgeeks.org/user/ronit_mathur_/" target="_blank" class="dashboard-card gfg">
+                <img src="./img/gfg.png" alt="GeeksforGeeks" class="dashboard-image">
+                <h3>GeeksforGeeks</h3>
+                <p>Check out my problem-solving skills on GeeksforGeeks.</p>
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Form with Enhanced Design -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>All rights reserved © 2024 Ronit</p>
+    </footer>
+
+</body>
+</html>
